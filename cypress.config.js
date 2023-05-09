@@ -11,5 +11,5 @@ module.exports = defineConfig({
     // baseUrl: "https://the-internet.herokuapp.com/",
     baseUrl: "https://www.amazon.com/",
   },
-  
+
 });
