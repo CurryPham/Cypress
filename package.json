@@ -169,7 +169,7 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "dev": "cypress open",
+    "open": "cypress open",
     "test": "cypress run --browser chrome --headed"
   },
   "keywords": [],
