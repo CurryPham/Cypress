@@ -9,7 +9,8 @@ module.exports = defineConfig({
 
     projectId: "cypress",
     specPattern: "./cypress/tests/**.*",
-    baseUrl: "https://the-internet.herokuapp.com/",
+    // baseUrl: "https://the-internet.herokuapp.com/",
+    baseUrl: "https://www.amazon.com/",
   },
   
 });
