@@ -1,0 +1,26 @@
+[
+    {
+      "text": "Home (current)",
+      "href": "index.html"
+    },
+    {
+      "text": "Contact",
+      "href": "#"
+    },
+    {
+      "text": "About us",
+      "href": "#"
+    },
+    {
+      "text": "Cart",
+      "href": "cart.html"
+    },
+    {
+      "text": "Log in",
+      "href": "#"
+    },
+    {
+      "text": "Sign up",
+      "href": "#"
+    }
+  ]

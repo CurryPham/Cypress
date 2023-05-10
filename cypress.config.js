@@ -7,9 +7,10 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
 
-    specPattern: "./cypress/tests/**.*",
+    specPattern: "./cypress/tests/*/*",
     // baseUrl: "https://the-internet.herokuapp.com/",
-    baseUrl: "https://www.amazon.com/",
+    //baseUrl: "https://www.amazon.com/",
+    baseUrl: "https://demoblaze.com",
   },
 
 });
