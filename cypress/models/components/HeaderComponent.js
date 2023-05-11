@@ -3,6 +3,7 @@ export default class HeaderComponent {
     brandLogoImg = () => cy.get("#nava img")
     headerMenuItemList = () => cy.get('.nav-item a')
     getLoginLink = () => cy.get('#login2')
+    getSignUpLink = () => cy.get('#signin2')
     getLoggedUsername = () => cy.get('#nameofuser')
 
     getMenuDetails(){
