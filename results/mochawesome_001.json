@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-12T07:51:57.951Z",
+    "end": "2023-05-12T07:52:01.370Z",
+    "duration": 3419,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c5bb9964-8c92-4be6-88bc-241e0a419f47",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\FooterTest.js",
+      "file": "cypress\\tests\\components\\FooterTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b05e1f6a-ba8d-4638-af47-db54a1efe250",
+          "title": "Footer Component Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test for about us column",
+              "fullTitle": "Footer Component Test Test for about us column",
+              "timedOut": null,
+              "duration": 2387,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const expectedAboutUsData = {\n  header: \"About Us\",\n  desc: \"We believe performance needs to be validated at every stage of the software development cycle and our open source compatible, massively scalable platform makes that a reality.\"\n};\nfooterComp.getAboutUsData().then(actualAboutUsData => {\n  cy.wrap('').then(() => {\n    expect(actualAboutUsData).to.eql(expectedAboutUsData);\n  });\n});",
+              "err": {},
+              "uuid": "4466ead7-a6d3-4921-915e-946b9f3188fb",
+              "parentUUID": "b05e1f6a-ba8d-4638-af47-db54a1efe250",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test for contact us column",
+              "fullTitle": "Footer Component Test Test for contact us column",
+              "timedOut": null,
+              "duration": 893,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const expectedContactUsData = {\n  header: \"Get in Touch\",\n  address: \"2390 El Camino\",\n  phone: \"+440 123456\",\n  email: \"demo@blazemeter.com\"\n};\nfooterComp.getContactUsData().then(contactUsData => {\n  cy.log(JSON.stringify(contactUsData));\n  cy.wrap('').then(() => {\n    expect(contactUsData.header).to.equal(expectedContactUsData.header);\n    expect(contactUsData.desc).to.contains(expectedContactUsData.address);\n    expect(contactUsData.desc).to.contains(expectedContactUsData.phone);\n    expect(contactUsData.desc).to.contains(expectedContactUsData.email);\n  });\n});",
+              "err": {},
+              "uuid": "7a833d6f-0824-4f0e-b710-6de96bfe8f9d",
+              "parentUUID": "b05e1f6a-ba8d-4638-af47-db54a1efe250",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4466ead7-a6d3-4921-915e-946b9f3188fb",
+            "7a833d6f-0824-4f0e-b710-6de96bfe8f9d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3280,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-05-12T07:52:43.713Z",
+    "end": "2023-05-12T07:53:06.766Z",
+    "duration": 23053,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bdc517d7-4e29-4826-9584-794d1902f3bc",
+      "title": "",
+      "fullFile": "cypress\\tests\\order\\OrderItem.js",
+      "file": "cypress\\tests\\order\\OrderItem.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aa7a9df1-7af5-4603-8352-5b0a554fb0db",
+          "title": "Product Component Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "oder item as guest",
+              "fullTitle": "Product Component Test oder item as guest",
+              "timedOut": null,
+              "duration": 12308,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "purchaseItem();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sweet-alert h2`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sweet-alert h2`, but never found it.\n    at Context.eval (webpack:///./cypress/tests/order/OrderItem.js:64:30)",
+                "diff": null
+              },
+              "uuid": "348cc600-0d7e-4087-b48a-365af8735216",
+              "parentUUID": "aa7a9df1-7af5-4603-8352-5b0a554fb0db",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "oder item as user",
+              "fullTitle": "Product Component Test oder item as user",
+              "timedOut": null,
+              "duration": 10513,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const LOGIN_CRED = {\n  username: \"tun\",\n  password: \"admin\"\n};\nconst {\n  username,\n  password\n} = LOGIN_CRED;\nlogin(username, password);\npurchaseItem();",
+              "err": {},
+              "uuid": "f3247e8b-8933-4aa3-a520-6e9d20b92812",
+              "parentUUID": "aa7a9df1-7af5-4603-8352-5b0a554fb0db",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f3247e8b-8933-4aa3-a520-6e9d20b92812"
+          ],
+          "failures": [
+            "348cc600-0d7e-4087-b48a-365af8735216"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22821,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
